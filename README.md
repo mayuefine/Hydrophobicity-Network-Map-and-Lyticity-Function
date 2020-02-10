@@ -6,6 +6,8 @@ The publish research at here: https://www.nature.com/articles/s41587-019-0222-z
 
 If you find this analysis works for you, please cite their work.
 
+"Mourtada, Rida, et al. "Design of stapled antimicrobial peptides that are stable, nontoxic and kill antibiotic-resistant bacteria in mice." Nature biotechnology 37.10 (2019): 1186-1197."
+
 Here are the example from them publiation:
 ![image](https://github.com/mayuefine/Hydrophobicity-Network-Map-and-Lyticity-Function/blob/master/picture/01.png)
 
