@@ -20,3 +20,8 @@ Using a fasta format sequence data as input data to the script named LI.pl, and 
 3. Plot a Hydrophobicity-Network-Map as described in Articles, like this:
 
 ![image](https://github.com/mayuefine/Hydrophobicity-Network-Map-and-Lyticity-Function/blob/master/picture/02.png)
+
+Notice! 
+1. Input sequences length between 5 and 40 amino acids long;
+2. Please make sure the AMP peptide is an alpha-helix；
+3. The insert S5 stapling amino acids, "X", at i,i+4 positions within sequence, and if you need other kind of modifier, youmay need to change the perl script.
