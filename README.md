@@ -8,10 +8,8 @@ If you find this analysis works for you, please cite their work.
 
 "Mourtada, Rida, et al. "Design of stapled antimicrobial peptides that are stable, nontoxic and kill antibiotic-resistant bacteria in mice." Nature biotechnology 37.10 (2019): 1186-1197."
 
-Here are the example from them publiation:
+This code will generate a series sequences and here are the example from them publiation:
 ![image](https://github.com/mayuefine/Hydrophobicity-Network-Map-and-Lyticity-Function/blob/master/picture/01.png)
-
-My code will generate a series sequences like this.
 
 Using a fasta format sequence data as input data to the script named LI.pl, and this script will do this work:
 
