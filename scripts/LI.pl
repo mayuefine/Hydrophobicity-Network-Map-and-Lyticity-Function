@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 
-#my $in = "t.fa";
+#my $in = "test.fa";
 my $in = $ARGV[0];
 open I, "<$in";
 my $a;
