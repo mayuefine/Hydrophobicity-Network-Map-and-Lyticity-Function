@@ -103,13 +103,13 @@ sub gen{
             $o2 =~ s/\.csv/\.fa\.csv/igm;
             my $seq_out2 = join("\n",@seq);
             open OU,">$o2";
-            print OU "$seq_out2";
+            print OU "$seq_out2\n";
             close OU;
             my $o3 = $out;
             $o3 =~ s/\.csv/\.li\.csv/igm;
             $limo =~ s/,/\n/igm;
             open O,">$o3";
-            print O "$limo";
+            print O "$limo\n";
             close O;
             system("Rscript hnm.R $out $o2 $o3");
             system("rm $out $o2 $o3");
