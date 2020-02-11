@@ -53,7 +53,7 @@ plot(point_data, type = "n", main = paste("Lyticity Index = ",round(slw[1],2),se
 #segments(xy[,1], xy[,2], xy1[,1], xy1[,2], col = colo[2], lwd = 1.1)
 rn <- nrow(xy)
 for(i in 1:rn){
-  segments(xy[i,1], xy[i,2], xy1[i,1], xy1[i,2], col = colo[2], lwd = lw[i,1]/5)
+  segments(xy[i,1], xy[i,2], xy1[i,1], xy1[i,2], col = colo[2], lwd = (lw[i,1] + 1.1)/5)
 }
 points(point_data, col = colo[1], cex = 4.75, pch = 20)
 text(point_data, labels = let_data, cex = 0.75)
