@@ -1,16 +1,15 @@
 #!/usr/bin/perl -w
 use strict;
 
-#my $in = "test.fa";
+#my $in = "t.fa";
 my $in = $ARGV[0];
 open I, "<$in";
 my $a;
 my $name;
 my %h = (
-    A => "3.9", X => "29.5", Z => "-1.1", B => "25.6",
-    F => "29.9", G => "0.0", C => "8.3", I => "22.4",
-    L => "24.2", M => "16.3", P => "9.7", V => "14.4",
-    W => "32.9",
+    A => "3.9", C => "8.3", F => "29.9", G => "0.0", I => "22.4",
+    L => "24.2", M => "16.3", P => "9.7", T => "3.9", V => "14.4",
+    W => "32.9", Y => "15.4",  X => "29.5", Z => "0.0", B => "25.6",
 );
 
 while(defined($a =<I>)){
@@ -47,7 +46,12 @@ sub ca{
             my $i4 = $i + 4;
             if($i3 < $leng){
                 if($h{$as[$i3]}){
-                    my $temh = $h{$as[$i]} + $h{$as[$i3]};
+                    my $temh;
+                    if($as[$i] eq "Z" | $as[$i3] eq "Z"){
+                        $temh = 0;
+                    }else{
+                        $temh = $h{$as[$i]} + $h{$as[$i3]};
+                    }
                     $lii = $lii + $temh;
                     my $x = $i + 1;
                     my $y = $i3 + 1;
@@ -57,7 +61,12 @@ sub ca{
             }
             if($i4 < $leng){
                 if($h{$as[$i4]}){
-                    my $temh4 = $h{$as[$i]} + $h{$as[$i4]};
+                    my $temh4;
+                    if($as[$i] eq "Z" | $as[$i4] eq "Z"){
+                        $temh4 = 0;
+                    }else{
+                        $temh4 = $h{$as[$i]} + $h{$as[$i4]};
+                    }
                     $lii = $lii + $temh4;
                     my $x = $i + 1;
                     my $y = $i4 + 1;
