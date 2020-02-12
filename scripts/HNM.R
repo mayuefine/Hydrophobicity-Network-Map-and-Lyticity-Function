@@ -64,7 +64,7 @@ slw <- colSums(lw)
 
 c = paste(csv_file,".png", sep = "")
 png(file=c, width = 600*3, height = 380*3, res = 72*3)
-plot(point_data, type = "n", main = paste("Lyticity Index = ",round(slw[1],2),sep = ""), axes = T, xaxt="n", yaxt="n", xlab = "", ylab = "")
+plot(point_data, type = "n", main = paste("Lyticity Index = ",round(slw[1],2),sep = ""), bty = "n", axes = T, xaxt="n", yaxt="n", xlab = "", ylab = "")
 #segments(xy[,1], xy[,2], xy1[,1], xy1[,2], col = colo[2], lwd = 1.1)
 rn <- nrow(xy)
 for(i in 1:rn){
